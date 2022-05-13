@@ -4,7 +4,7 @@ LABEL author="Meysam Azad <meysam@licenseware.io>"
 
 ENV PYTHONUNBUFFERED=1
 
-RUN pip install -U pip
+RUN apk add --update gcc musl-dev libffi-dev && pip install -U pip
 
 COPY . .
 

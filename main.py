@@ -9,8 +9,6 @@ from random import choice, seed
 from pprint import pformat
 import flask_bcrypt
 
-import boto3
-
 DEFAULT_PASSWORD_LENGTH = 16
 DEFAULT_LOG_LEVEL = "error"
 PASSWORD_OUTPUT_KEY = "password"
