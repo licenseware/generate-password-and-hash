@@ -3,7 +3,7 @@ name: Build image
 on:
   push:
     branches:
-      - $default-branch
+      - "$default-branch"
 
 env:
   REGISTRY: ghcr.io
