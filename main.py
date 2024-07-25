@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 
-import string
 import argparse
+import logging
+import string
 import sys
 import time
-import logging
 from random import choice, seed
-from pprint import pformat
+
 import flask_bcrypt
 
 DEFAULT_PASSWORD_LENGTH = 16
