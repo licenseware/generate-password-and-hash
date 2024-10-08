@@ -8,14 +8,9 @@ on:
     branches:
       - main
 
-env:
-  REGISTRY: ghcr.io
-
 jobs:
   build-image:
     runs-on: ubuntu-latest
-    env:
-      IMAGE_REPOSITORY: ${{ env.REGISTRY }}/${{ github.repository }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
